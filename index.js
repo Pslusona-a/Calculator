@@ -23,6 +23,7 @@ function down(){
         document.getElementById("mainBox").value = count[num];
     }
 }
+
 function solve(){
     document.getElementById("solved").innerText = eval(document.querySelector("input").value);
     sessionStorage.setItem("history", document.querySelector("input").value);
