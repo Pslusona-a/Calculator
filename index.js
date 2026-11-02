@@ -26,9 +26,9 @@ function down(){
 
 function solve(){
     document.getElementById("solved").innerText = eval(document.querySelector("input").value);
-    sessionStorage.setItem("history", document.querySelector("input").value);
     count[num] = document.querySelector("input").value;
     num++;
+    sessionStorage.setItem("history", document.querySelector("input").value);
 }
 function place(){
     document.getElementById("mainBox").value += "(";
