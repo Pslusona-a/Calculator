@@ -1,5 +1,6 @@
 let count;
 let num = 0;
+
 function storageFun(){
     const stored = sessionStorage.getItem("history");
     if(stored){
