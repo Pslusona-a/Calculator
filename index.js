@@ -24,12 +24,18 @@ function down(){
     }
 }
 function solve(){
-    const solution = eval(document.querySelector("input").value);
+    document.getElementById("solved").innerText = eval(document.querySelector("input").value);
     sessionStorage.setItem("history", document.querySelector("input").value);
     count[num] = document.querySelector("input").value;
     num++;
-    document.getElementById("solved").innerText = solution;
 }
+function place(){
+    document.getElementById("mainBox").value += "(";
+}
+function place2(){
+    document.getElementById("mainBox").value += ")";
+}
+
 function a(){
     document.getElementById("mainBox").value += "1";
 }

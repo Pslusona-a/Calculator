@@ -12,6 +12,7 @@
         height: 40px;
     }
     p{
+        text-align: right;
         grid-row: span 1;
         grid-column: span 3;
         color: black;
